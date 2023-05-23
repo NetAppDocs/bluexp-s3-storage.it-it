@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: task-change-s3-bucket-settings.html 
+keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
+summary: Una volta che il tuo ambiente di lavoro Amazon S3 è disponibile in Canvas, puoi modificare alcune proprietà del bucket direttamente da BlueXP. 
+---
+= Modificare le impostazioni del bucket S3
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Una volta che il tuo ambiente di lavoro Amazon S3 è disponibile in Canvas, puoi modificare alcune proprietà del bucket direttamente da BlueXP.
+
+Nota: Non è possibile modificare il nome del bucket, l'account AWS, la regione o l'impostazione di blocco degli oggetti.
+
+Le proprietà del bucket che è possibile modificare includono:
+
+* Se il controllo delle versioni è attivato o disattivato per tutti gli oggetti nel bucket.
+* È possibile scegliere di applicare tag agli oggetti aggiunti al bucket.
+* Se i nuovi oggetti aggiunti al bucket vengono crittografati o meno e l'opzione utilizzata per la crittografia.
+
+
+È possibile modificare queste impostazioni del bucket direttamente da BlueXP facendo clic su image:button-horizontal-more.gif["il pulsante three dots more"] per un bucket.
+
+image:screenshot-edit-amazon-s3-bucket.png["Una schermata che mostra come selezionare il pulsante Manager Details (Dettagli manager) per modificare le proprietà del bucket."]
+
+
+
+== Modificare l'impostazione della versione
+
+Il controllo delle versioni consente di mantenere più versioni di un oggetto in un bucket in modo da poter ripristinare gli oggetti che vengono cancellati o sovrascritti accidentalmente. È possibile modificare l'impostazione di versione per gli oggetti futuri quando vengono aggiunti al bucket. La modifica dell'impostazione di versione non modifica il valore per gli oggetti esistenti.
+
+Il controllo delle versioni è disattivato per impostazione predefinita nei nuovi bucket creati da BlueXP, a meno che non sia stato attivato il blocco degli oggetti al momento della creazione del bucket. https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html["Scopri di più sul controllo delle versioni nella documentazione di Amazon S3"^].
+
+Una volta attivata, se si desidera interrompere temporaneamente o in modo permanente la versione, è possibile scegliere lo stato "sospeso". Una volta attivata, non è possibile disattivare la versione.
+
+image:screenshot-amazon-s3-versioning.png["Una schermata che mostra come modificare le impostazioni di versione per un bucket."]
+
+
+
+== Aggiungere o modificare tag per gli oggetti nel bucket
+
+I tag sono metadati che puoi utilizzare per raggruppare le risorse per identificare applicazioni, ambienti, regioni, cloud provider e altro ancora. I tag sono costituiti da una chiave tag e da un valore tag. È possibile aggiungere tag a un bucket in modo che i tag vengano applicati agli oggetti quando vengono aggiunti al bucket. È inoltre possibile modificare ed eliminare tag e valori di tag.
+
+I tag sono disattivati per impostazione predefinita nei nuovi bucket creati da BlueXP. https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html["Scopri di più sulla tagging dalla documentazione di Amazon S3"^].
+
+image:screenshot-amazon-s3-tags.png["Una schermata che mostra come aggiungere una nuova coppia chiave/valore tag per un bucket."]
+
+Dopo aver aggiunto un tag, fare clic su *Apply* (Applica) per salvare le modifiche. Se si desidera aggiungere altri tag, fare clic su *Aggiungi nuovo tag*. È possibile aggiungere fino a 10 tag per bucket.
+
+
+
+== Modificare l'impostazione di crittografia
+
+La crittografia lato server consente di crittografare i dati nella destinazione Amazon S3. Amazon S3 crittografa i dati a livello di oggetto durante la scrittura su disco e li decrta per te quando accedi. È possibile modificare l'impostazione di crittografia utilizzata per gli oggetti futuri quando vengono aggiunti al bucket.
+
+La crittografia è attivata per impostazione predefinita utilizzando "Amazon S3 Managed keys (SSE-S3)" nei nuovi bucket creati da BlueXP. https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html["Scopri di più sulla crittografia lato server nella documentazione di Amazon S3"^].
+
+In alternativa, è possibile scegliere di attivare la crittografia utilizzando la "chiave AWS Key Management Service (SSE-KMS)". La crittografia è possibile anche utilizzando le chiavi fornite dal cliente (SSE-C), ma questa funzionalità non è disponibile tramite l'interfaccia utente di BlueXP. È necessario utilizzare l'interfaccia Amazon.
+
+image:screenshot-amazon-s3-encryption1.png["Una schermata che mostra come modificare il tipo di chiave di crittografia utilizzata per un bucket."]
+
+Se scegli "AWS Key Management Service key (SSE-KMS)", puoi scegliere una chiave AWS KMS che hai già creato oppure puoi utilizzare una chiave AWS KMS ARN (Amazon Resource Name).
+
+image:screenshot-amazon-s3-encryption2.png["Una schermata che mostra come selezionare impostazioni di crittografia alternative per un bucket."]
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html["Scopri di più su AWS Key Management Service nella documentazione di Amazon S3"^] e su https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt["Utilizzo delle chiavi cliente rispetto alle chiavi AWS"^].

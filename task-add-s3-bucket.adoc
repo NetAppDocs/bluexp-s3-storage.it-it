@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: task-add-s3-bucket.html 
+keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
+summary: Una volta che il tuo ambiente di lavoro Amazon S3 è disponibile in Canvas, puoi aggiungere altri bucket direttamente da BlueXP. 
+---
+= Aggiungere i bucket S3
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Una volta che il tuo ambiente di lavoro Amazon S3 è disponibile in Canvas, puoi aggiungere altri bucket direttamente da BlueXP.
+
+.Fasi
+. Da Canvas, fare doppio clic sull'ambiente di lavoro Amazon S3 per visualizzare la pagina Panoramica dei bucket Amazon S3, quindi fare clic su *Aggiungi bucket*.
++
+image:screenshot-add-amazon-s3-bucket-button.png["Una schermata che mostra i dettagli di un ambiente di lavoro Amazon S3 e il pulsante Add bucket (Aggiungi bucket)."]
+
++
+Viene visualizzata la pagina _Add bucket_.
+
++
+image:screenshot-add-amazon-s3-bucket.png["Una schermata che mostra la pagina Add Bucket (Aggiungi bucket) per creare il tuo bucket Amazon S3 personalizzato."]
+
+. Nella pagina Add bucket (Aggiungi bucket), immettere le informazioni richieste per creare il bucket e fare clic su *Apply* (Applica).
++
+.. Immettere il nome che si desidera utilizzare per il bucket.
+.. Selezionare l'account AWS che sarà il proprietario del bucket. Questo può essere l'account principale in cui è stato implementato il connettore o un https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#add-credentials-to-a-connector["Account diverso aggiunto a BlueXP"^].
+.. Selezionare la regione AWS in cui verrà creato il bucket.
+.. Facoltativamente, è possibile attivare il blocco degli oggetti S3 nel bucket per memorizzare gli oggetti utilizzando un modello WORM (Write-Once-Read-Many). Se si intende utilizzare il blocco degli oggetti, è necessario attivarlo durante la creazione del bucket. L'attivazione del blocco oggetti attiva anche il controllo delle versioni. https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["Scopri di più sul blocco degli oggetti nella documentazione di Amazon S3"^].
++
+Viene creato il bucket.
+
+
+
+
+
+.Cosa succederà
+Non è possibile configurare manualmente versioni, tag o crittografia quando si aggiunge inizialmente un bucket. Una volta creato il bucket, è possibile configurare le altre proprietà del bucket. link:task-change-s3-bucket-settings.html["Scopri di più sulla modifica delle impostazioni della benna"].

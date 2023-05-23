@@ -1,0 +1,67 @@
+---
+settings:
+  name: Amazon S3 storage
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: it-it,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
+sidebar:
+  entries:
+  - title: Documentazione sullo storage Amazon S3
+    url: "/index.html"
+  - title: Note di rilascio
+    url: "/whats-new.html"
+  - title: Inizia subito
+    entries:
+    - title: Visualizza i bucket Amazon S3
+      url: "/task-viewing-amazon-s3.html"
+  - title: Gestire i bucket S3
+    entries:
+    - title: Aggiungere i bucket S3
+      url: "/task-add-s3-bucket.html"
+    - title: Modificare le impostazioni del bucket S3
+      url: "/task-change-s3-bucket-settings.html"
+    - title: Utilizza i servizi dati NetApp con i bucket S3
+      url: "/task-s3-enable-data-services.html"
+  - title: Conoscenza e supporto
+    entries:
+    - title: Registrati per ricevere assistenza
+      url: "/task-support-registration.html"
+    - title: Richiedi assistenza
+      url: "/task-get-help.html"
+  - title: Note legali
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: Inizia subito
+    links:
+    - title: Visualizza i bucket Amazon S3
+      url: task-viewing-amazon-s3.html
+  - title: Gestire i bucket S3
+    links:
+    - title: Aggiungere i bucket S3
+      url: task-add-s3-bucket.html
+    - title: Modificare le impostazioni della benna
+      url: task-change-s3-bucket-settings.html
+    - title: Utilizza i servizi dati NetApp con i bucket S3
+      url: task-s3-enable-data-services.html
+  - title: Ulteriori informazioni
+    links:
+    - title: Documentazione Amazon S3 per la gestione al di fuori di BlueXP
+      url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-buckets-s3.html
+  - title: Blog e community
+    links:
+    - title: Community NetApp
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: Blog BlueXP
+      url: https://bluexp.netapp.com/blog/topic/cloud-manager
+    - title: Webinar sul cloud
+      url: https://bluexp.netapp.com/events
+product-family:
+  name: BlueXP
+  repo: cloud-manager-family
+  sidebar_label: Tutta la documentazione BlueXP

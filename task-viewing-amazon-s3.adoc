@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: task-viewing-amazon-s3.html 
+keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
+summary: 'Dopo aver installato un connettore in AWS, BlueXP è in grado di rilevare automaticamente le informazioni sui bucket Amazon S3 che si trovano nell"account AWS in cui è installato il connettore. In Canvas viene aggiunto un ambiente di lavoro Amazon S3, in modo da poter visualizzare queste informazioni.' 
+---
+= Visualizzazione dei bucket Amazon S3
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dopo aver installato un connettore in AWS, BlueXP è in grado di rilevare automaticamente le informazioni sui bucket Amazon S3 che si trovano nell'account AWS in cui è installato il connettore. In Canvas viene aggiunto un ambiente di lavoro Amazon S3, in modo da poter visualizzare queste informazioni.
+
+Puoi visualizzare i dettagli sui bucket S3, tra cui la regione, la policy di accesso, l'account, la capacità totale e utilizzata e molto altro ancora. Questi bucket possono essere utilizzati come destinazioni per le operazioni di backup e ripristino BlueXP, tiering BlueXP o copia e sincronizzazione BlueXP. Inoltre, è possibile utilizzare la classificazione BlueXP per eseguire la scansione di questi bucket.
+
+.Fasi
+. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Installare un connettore"^] Nell'account AWS in cui si desidera visualizzare i bucket Amazon S3.
+. Dal menu di navigazione, selezionare *Storage > Canvas*.
++
+Subito dopo, dovresti visualizzare automaticamente il tuo ambiente di lavoro Amazon S3.
+
++
+image:screenshot-amazon-s3-we.png["Schermata di un ambiente di lavoro Amazon S3."]
+
+. Fare clic sull'ambiente di lavoro e selezionare un'azione dal riquadro di destra se si desidera attivare i servizi BlueXP con lo storage S3.
++
+image:screenshot-amazon-s3-actions.png["Una schermata che mostra il pannello delle azioni dopo aver selezionato un ambiente di lavoro Amazon S3. Il riquadro mostra informazioni su S3: Il numero di bucket e i servizi disponibili."]
+
++
+link:task-s3-enable-data-services.html["Scopri quali servizi BlueXP sono disponibili e come utilizzarli con i bucket S3"].
+
+. Fare clic su *Enter Working Environment* (Inserisci ambiente di lavoro) oppure fare doppio clic sull'ambiente di lavoro per visualizzare i dettagli sui bucket S3 nell'account AWS.
++
+image:screenshot-amazon-s3-buckets.png["Una schermata che mostra i dettagli di un ambiente di lavoro Amazon S3: Il numero totale di bucket e il numero totale di regioni e una tabella che mostra i dettagli di ciascun bucket S3."]
+
++
+Oltre alle colonne visualizzate per impostazione predefinita, è possibile scorrere la pagina per visualizzare ulteriori proprietà per il bucket, ad esempio il numero di tag e se sono state attivate le opzioni blocco oggetto o controllo versione.
+
+
+
+.Cosa succederà
+È possibile modificare alcune impostazioni del bucket direttamente da BlueXP facendo clic su image:button-horizontal-more.gif["il pulsante three dots more"] per un bucket. link:task-change-s3-bucket-settings.html["Fai clic qui per ulteriori informazioni"].
+
+È possibile aggiungere nuovi bucket S3 facendo clic su *Add bucket* (Aggiungi bucket). link:task-add-s3-bucket.html["Fai clic qui per ulteriori informazioni"].

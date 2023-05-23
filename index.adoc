@@ -1,0 +1,16 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: Get started using Amazon S3 storage with your BlueXP system. 
+summary: Inizia a utilizzare lo storage Amazon S3 con il tuo sistema BlueXP. 
+---
+= Documentazione sullo storage Amazon S3
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

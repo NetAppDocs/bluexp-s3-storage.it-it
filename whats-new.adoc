@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
+summary: Scopri le novità dello storage Amazon S3 in BlueXP. 
+---
+= Novità dello storage Amazon S3 in BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Scopri le novità dello storage Amazon S3 in BlueXP.
+
+
+
+== 5 marzo 2023
+
+
+
+=== Possibilità di aggiungere nuovi bucket da BlueXP
+
+Hai avuto la possibilità di visualizzare i bucket Amazon S3 su BlueXP Canvas per un po' di tempo. Ora puoi aggiungere nuovi bucket e modificare le proprietà dei bucket esistenti direttamente da BlueXP. https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Scopri come aggiungere nuovi bucket Amazon S3"^].
