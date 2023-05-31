@@ -19,7 +19,7 @@ Dopo aver installato un connettore in AWS, BlueXP è in grado di rilevare automa
 Puoi visualizzare i dettagli sui bucket S3, tra cui la regione, la policy di accesso, l'account, la capacità totale e utilizzata e molto altro ancora. Questi bucket possono essere utilizzati come destinazioni per le operazioni di backup e ripristino BlueXP, tiering BlueXP o copia e sincronizzazione BlueXP. Inoltre, è possibile utilizzare la classificazione BlueXP per eseguire la scansione di questi bucket.
 
 .Fasi
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Installare un connettore"^] Nell'account AWS in cui si desidera visualizzare i bucket Amazon S3.
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["Installare un connettore"^] Nell'account AWS in cui si desidera visualizzare i bucket Amazon S3.
 . Dal menu di navigazione, selezionare *Storage > Canvas*.
 +
 Subito dopo, dovresti visualizzare automaticamente il tuo ambiente di lavoro Amazon S3.

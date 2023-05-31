@@ -30,7 +30,7 @@ image:screenshot-add-amazon-s3-bucket.png["Una schermata che mostra la pagina Ad
 . Nella pagina Add bucket (Aggiungi bucket), immettere le informazioni richieste per creare il bucket e fare clic su *Apply* (Applica).
 +
 .. Immettere il nome che si desidera utilizzare per il bucket.
-.. Selezionare l'account AWS che sarà il proprietario del bucket. Questo può essere l'account principale in cui è stato implementato il connettore o un https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#add-credentials-to-a-connector["Account diverso aggiunto a BlueXP"^].
+.. Selezionare l'account AWS che sarà il proprietario del bucket. Questo può essere l'account principale in cui è stato implementato il connettore o un https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html#add-credentials-to-a-connector["Account diverso aggiunto a BlueXP"^].
 .. Selezionare la regione AWS in cui verrà creato il bucket.
 .. Facoltativamente, è possibile attivare il blocco degli oggetti S3 nel bucket per memorizzare gli oggetti utilizzando un modello WORM (Write-Once-Read-Many). Se si intende utilizzare il blocco degli oggetti, è necessario attivarlo durante la creazione del bucket. L'attivazione del blocco oggetti attiva anche il controllo delle versioni. https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["Scopri di più sul blocco degli oggetti nella documentazione di Amazon S3"^].
 +
