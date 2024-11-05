@@ -139,7 +139,6 @@
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 marzo 2023</block>
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">Possibilità di aggiungere nuovi bucket da BlueXP</block>
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">Scopri come aggiungere nuovi bucket Amazon S3</block>
-  <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">Hai avuto la possibilità di visualizzare i bucket Amazon S3 su BlueXP Canvas per un po' di tempo. Ora puoi aggiungere nuovi bucket e modificare le proprietà dei bucket esistenti direttamente da BlueXP.<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>.</block>
   <block id="5617fc4c90db2216d4ba9da3ed61d8ee" category="summary">Dopo aver scoperto i bucket S3 in BlueXP, puoi utilizzare i servizi dati NetApp per backup, tiering, classificazione e sincronizzazione dei dati.</block>
   <block id="49b9d9b89078e5e4f47991c877526750" category="doc">Utilizza i servizi dati NetApp con i bucket S3</block>
   <block id="55d43ef1b3aadb22506c7c638269e01f" category="list-text">Utilizza *backup e ripristino BlueXP* per eseguire il backup dei dati dai sistemi ONTAP e Cloud Volumes ONTAP on-premise allo storage a oggetti S3.</block>
@@ -296,4 +295,5 @@
   <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">È necessario associare le credenziali del sito di supporto NetApp alla propria organizzazione BlueXP  per abilitare i seguenti flussi di lavoro chiave per Cloud Volumes ONTAP:</block>
   <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">L'associazione delle credenziali NSS all'organizzazione BlueXP  è diversa dall'account NSS associato a un accesso utente BlueXP .</block>
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">Queste credenziali NSS sono associate all'ID organizzazione BlueXP  specifico dell'utente. Gli utenti che appartengono all'organizzazione BlueXP  possono accedere a queste credenziali da *supporto &gt; Gestione NSS*.</block>
+  <block id="7e4353e591e7ee71b0cc70a66b02ee7a" category="paragraph">Hai avuto la possibilità di visualizzare i bucket Amazon S3 su BlueXP Canvas per un po' di tempo. Ora è possibile aggiungere nuovi bucket e modificare le proprietà per i bucket esistenti direttamente da BlueXP .<block ref="f5358cf9e8e537088a631ff4313d8401" category="inline-link-rx"></block>.</block>
 </blocks>
