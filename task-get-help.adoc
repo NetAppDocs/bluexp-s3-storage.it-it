@@ -7,161 +7,179 @@ summary: 'NetApp fornisce supporto per BlueXP in diversi modi. Sono disponibili 
 = Richiedi assistenza
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
-NetApp fornisce supporto per BlueXP e i suoi servizi cloud in diversi modi. Sono disponibili opzioni complete di supporto autonomo gratuito 24 ore su 24, 7 giorni su 7, come articoli della knowledge base (KB) e un forum della community. La registrazione al supporto include il supporto tecnico remoto via web ticketing.
+[role="lead"]
+È necessaria la registrazione del supporto per ricevere supporto tecnico specifico per BlueXP e le relative soluzioni e servizi storage. È inoltre necessaria la registrazione del supporto per abilitare i flussi di lavoro chiave per i sistemi Cloud Volumes ONTAP.
 
-
-
-== Ottieni supporto per un file service del cloud provider
-
-Per supporto tecnico relativo a un file service di un cloud provider, alla sua infrastruttura o a una soluzione che utilizza il servizio, fare riferimento a "Guida in linea" nella documentazione BlueXP relativa a quel prodotto.
+La registrazione per il supporto non attiva il supporto NetApp per un file service provider cloud. Per supporto tecnico relativo a un file service di un cloud provider, alla sua infrastruttura o a una soluzione che utilizza il servizio, fare riferimento a "Guida in linea" nella documentazione BlueXP relativa a quel prodotto.
 
 * link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX per ONTAP"^]
 * link:https://docs.netapp.com/us-en/bluexp-azure-netapp-files/concept-azure-netapp-files.html#getting-help["Azure NetApp Files"^]
 * link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/concept-cvs-gcp.html#getting-help["Cloud Volumes Service per Google Cloud"^]
 
 
-Per ricevere supporto tecnico specifico di BlueXP e delle relative soluzioni e servizi storage, utilizza le opzioni di supporto descritte di seguito.
 
 
+== Panoramica sulla registrazione del supporto
 
-== Utilizzare le opzioni di supporto automatico
+Esistono due forme di registrazione per attivare i diritti di supporto:
 
-Queste opzioni sono disponibili gratuitamente, 24 ore su 24, 7 giorni su 7:
-
-* Documentazione
+* Registrazione del numero di serie dell'account BlueXP  (il numero di serie 960xxxxxxxxx a 20 cifre si trova nella pagina risorse di supporto di BlueXP ).
 +
-La documentazione BlueXP attualmente visualizzata.
+Questa funzione funge da unico ID di abbonamento al supporto per qualsiasi servizio all'interno di BlueXP. Ogni abbonamento al supporto a livello di account BlueXP deve essere registrato.
 
-* https://kb.netapp.com/Cloud/BlueXP["Knowledge base"^]
+* Registrazione dei numeri di serie Cloud Volumes ONTAP associati a un abbonamento nel mercato del provider cloud (si tratta di numeri di serie 909201xxxxxxxx a 20 cifre).
 +
-Cercare nella Knowledge base di BlueXP articoli utili per la risoluzione dei problemi.
-
-* http://community.netapp.com/["Community"^]
-+
-Unisciti alla community BlueXP per seguire le discussioni in corso o crearne di nuove.
+Questi numeri seriali sono comunemente denominati _numeri seriali PAYGO_ e vengono generati da BlueXP al momento dell'implementazione di Cloud Volumes ONTAP.
 
 
 
+La registrazione di entrambi i tipi di numeri di serie offre funzionalità come l'apertura di ticket di supporto e la generazione automatica dei casi. La registrazione viene completata aggiungendo account del sito di supporto NetApp a BlueXP come descritto di seguito.
 
 
-== Crea un caso con il supporto NetApp
 
-Oltre alle opzioni di supporto autonomo sopra descritte, puoi collaborare con uno specialista del supporto NetApp per risolvere eventuali problemi dopo l'attivazione del supporto.
+== Registrare BlueXP  per ricevere assistenza NetApp
 
-.Prima di iniziare
-* Per utilizzare la funzione *creazione di un caso*, è necessario prima associare le credenziali del sito di supporto NetApp al login BlueXP. https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.html["Scopri come gestire le credenziali associate all'accesso a BlueXP"^].
-* Se stai aprendo un caso per un sistema ONTAP con un numero di serie, il tuo account NSS deve essere associato al numero di serie di quel sistema.
+Per registrarsi per ricevere assistenza e attivare i diritti di supporto, un utente dell'organizzazione (o account) BlueXP  deve associare un account del sito di supporto NetApp al proprio login BlueXP . La modalità di registrazione al supporto NetApp dipende dal fatto che si disponga già di un account NetApp Support Site (NSS).
 
+
+
+=== Cliente esistente con un account NSS
+
+Se sei un cliente NetApp con un account NSS, devi semplicemente registrarti per ricevere supporto tramite BlueXP.
 
 .Fasi
-. In BlueXP, selezionare *Guida > supporto*.
-. Nella pagina *risorse*, scegliere una delle opzioni disponibili in supporto tecnico:
+. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
+. Selezionare *User Credentials* (credenziali utente).
+. Selezionare *Aggiungi credenziali NSS* e seguire la richiesta di autenticazione del sito di supporto NetApp.
+. Per confermare che la procedura di registrazione è stata eseguita correttamente, selezionare l'icona Guida e selezionare *supporto*.
 +
-.. Selezionare *Chiamateci* se si desidera parlare con qualcuno al telefono. Viene visualizzata una pagina su netapp.com che elenca i numeri di telefono che è possibile chiamare.
-.. Selezionare *Crea un caso* per aprire un ticket con uno specialista del supporto NetApp:
-+
-*** *Servizio*: Selezionare il servizio a cui è associato il problema. Ad esempio, BlueXP quando si tratta di un problema di supporto tecnico relativo a flussi di lavoro o funzionalità all'interno del servizio.
-*** *Ambiente di lavoro*: Se applicabile allo storage, selezionare *Cloud Volumes ONTAP* o *on-premise* e quindi l'ambiente di lavoro associato.
-+
-L'elenco degli ambienti di lavoro rientra nell'ambito dell'organizzazione (o account), del progetto (o dell'area di lavoro) BlueXP  e del connettore selezionato nell'intestazione superiore del servizio.
-
-*** *Priorità caso*: Scegliere la priorità per il caso, che può essere bassa, Media, alta o critica.
-+
-Per ulteriori informazioni su queste priorità, passare il mouse sull'icona delle informazioni accanto al nome del campo.
-
-*** *Descrizione del problema*: Fornire una descrizione dettagliata del problema, inclusi eventuali messaggi di errore o procedure di risoluzione dei problemi che sono state eseguite.
-*** *Indirizzi e-mail aggiuntivi*: Inserisci indirizzi e-mail aggiuntivi se desideri informare qualcun altro del problema.
-*** *Allegato (opzionale)*: Carica fino a cinque allegati, uno alla volta.
-+
-Gli allegati sono limitati a 25 MB per file. Sono supportate le seguenti estensioni di file: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx e csv.
-
-
-
-
+La pagina *risorse* dovrebbe mostrare che l'organizzazione BlueXP  è registrata per il supporto.
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-create-case.png["Schermata del modulo Crea un caso che consente di creare un caso con il supporto NetApp."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-support-registration.png["Una schermata che mostra il numero di serie di un account, una casella di controllo verde e il testo registrato per il supporto."]
+
++
+Si noti che gli altri utenti di BlueXP non visualizzeranno lo stesso stato di registrazione del supporto se non hanno associato un account del sito di supporto NetApp al proprio login BlueXP. Tuttavia, ciò non significa che la tua organizzazione BlueXP  non sia registrata per il supporto. Finché un utente dell'organizzazione ha seguito questi passaggi, l'organizzazione è stata registrata.
+
+
+
+
+
+=== Cliente esistente ma nessun account NSS
+
+Se sei un cliente NetApp con licenze e numeri di serie esistenti ma _no_ account NSS, devi creare un account NSS e associarlo al tuo login BlueXP.
+
+.Fasi
+. Creare un account NetApp Support Site completando il https://mysupport.netapp.com/site/user/registration["Modulo di registrazione per l'utente del sito di supporto NetApp"^]
++
+.. Assicurarsi di selezionare il livello utente appropriato, che in genere è *cliente/utente finale NetApp*.
+.. Assicurarsi di copiare il numero di serie dell'account BlueXP (960xxxx) utilizzato in precedenza per il campo del numero di serie. In questo modo, l'elaborazione dell'account sarà più rapida.
+
+
+. Associare il nuovo account NSS al login BlueXP completando la procedura riportata sotto <<Cliente esistente con un account NSS>>.
+
+
+
+
+=== Novità di NetApp
+
+Se sei nuovo di NetApp e non disponi di un account NSS, segui i passaggi riportati di seguito.
+
+.Fasi
+. Nella parte superiore destra della console BlueXP, selezionare l'icona della Guida e selezionare *supporto*.
++
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["Schermata del menu Help (Guida) in cui Support (Assistenza) è la prima opzione elencata"]
+
+. Individuare il numero di serie dell'ID account nella pagina Support Registration (registrazione supporto).
++
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-serial-number.png["Schermata del menu Help (Guida) in cui Support (Assistenza) è la prima opzione elencata"]
+
+. Selezionare https://register.netapp.com["Sito per la registrazione del supporto NetApp"^] E selezionare *non sono un cliente NetApp registrato*.
+. Compilare i campi obbligatori (con asterischi rossi).
+. Nel campo *Product Line*, selezionare *Cloud Manager*, quindi selezionare il provider di fatturazione appropriato.
+. Copia il numero di serie del tuo account dal punto 2 precedente, completa il controllo di sicurezza, quindi conferma di aver letto la Global Data Privacy Policy di NetApp.
++
+Viene immediatamente inviata un'e-mail alla casella di posta fornita per finalizzare questa transazione sicura. Controllare le cartelle di spam se l'e-mail di convalida non arriva in pochi minuti.
+
+. Confermare l'azione dall'interno dell'e-mail.
++
+La conferma invia la tua richiesta a NetApp e ti consiglia di creare un account NetApp Support Site.
+
+. Creare un account NetApp Support Site completando il https://mysupport.netapp.com/site/user/registration["Modulo di registrazione per l'utente del sito di supporto NetApp"^]
++
+.. Assicurarsi di selezionare il livello utente appropriato, che in genere è *cliente/utente finale NetApp*.
+.. Assicurarsi di copiare il numero di serie dell'account (960xxxx) utilizzato in precedenza per il campo del numero di serie. Ciò velocizzerà l'elaborazione.
+
 
 
 
 .Al termine
-Viene visualizzata una finestra a comparsa con il numero del caso di supporto. Uno specialista del supporto NetApp esaminerà il tuo caso e ti contatterà al più presto.
+NetApp dovrebbe contattarti durante questo processo. Si tratta di un esercizio di assunzione per i nuovi utenti.
 
-Per una cronologia dei casi di supporto, selezionare *Impostazioni > Cronologia* e cercare le azioni denominate "Crea caso di supporto". Un pulsante all'estrema destra consente di espandere l'azione per visualizzare i dettagli.
-
-È possibile che venga visualizzato il seguente messaggio di errore quando si tenta di creare un caso:
-
-"Non sei autorizzato a creare un caso per il servizio selezionato"
-
-Questo errore potrebbe indicare che l'account NSS e la società di registrazione a cui è associato non sono la stessa società di registrazione per il numero di serie dell'account BlueXP (ad es. 960xxxx) o il numero di serie dell'ambiente di lavoro. È possibile richiedere assistenza utilizzando una delle seguenti opzioni:
-
-* Utilizza la chat integrata nel prodotto
-* Inviare un caso non tecnico all'indirizzo https://mysupport.netapp.com/site/help[]
+Una volta ottenuto l'account del sito di supporto NetApp, associare l'account al login BlueXP completando la procedura indicata in <<Cliente esistente con un account NSS>>.
 
 
 
+== Associare le credenziali NSS per il supporto Cloud Volumes ONTAP
 
-== Gestire i casi di supporto (anteprima)
+È necessario associare le credenziali del sito di supporto NetApp alla propria organizzazione BlueXP  per abilitare i seguenti flussi di lavoro chiave per Cloud Volumes ONTAP:
 
-È possibile visualizzare e gestire i casi di supporto attivi e risolti direttamente da BlueXP. Puoi gestire i casi associati al tuo account NSS e alla tua azienda.
-
-La gestione del caso è disponibile come anteprima. Intendiamo perfezionare questa esperienza e aggiungere miglioramenti alle prossime release. Inviaci un feedback utilizzando la chat in-product.
-
-Tenere presente quanto segue:
-
-* La dashboard di gestione dei casi nella parte superiore della pagina offre due visualizzazioni:
+* Registrazione dei sistemi Cloud Volumes ONTAP pay-as-you-go per il supporto
 +
-** La vista a sinistra mostra il totale dei casi aperti negli ultimi 3 mesi dall'account NSS dell'utente fornito.
-** La vista a destra mostra il totale dei casi aperti negli ultimi 3 mesi a livello aziendale in base all'account NSS dell'utente.
+È necessario fornire l'account NSS per attivare il supporto per il sistema e accedere alle risorse di supporto tecnico di NetApp.
 
-
+* Implementazione di Cloud Volumes ONTAP con la propria licenza (BYOL)
 +
-I risultati della tabella riflettono i casi correlati alla vista selezionata.
+È necessario fornire l'account NSS in modo che BlueXP possa caricare la chiave di licenza e attivare l'abbonamento per il periodo di validità dell'acquisto. Sono inclusi gli aggiornamenti automatici per i rinnovi dei termini.
 
-* È possibile aggiungere o rimuovere colonne di interesse e filtrare il contenuto di colonne come priorità e Stato. Altre colonne offrono funzionalità di ordinamento.
-+
-Per ulteriori informazioni, consulta la procedura riportata di seguito.
+* Aggiornamento del software Cloud Volumes ONTAP alla versione più recente
 
-* A livello di caso, offriamo la possibilità di aggiornare le note del caso o chiudere un caso che non è già in stato chiuso o in attesa di chiusura.
+
+L'associazione delle credenziali NSS all'organizzazione BlueXP  è diversa dall'account NSS associato a un accesso utente BlueXP .
+
+Queste credenziali NSS sono associate all'ID organizzazione BlueXP  specifico dell'utente. Gli utenti che appartengono all'organizzazione BlueXP  possono accedere a queste credenziali da *supporto > Gestione NSS*.
+
+* Se disponi di un account a livello di cliente, puoi aggiungere uno o più account NSS.
+* Se disponi di un account partner o reseller, puoi aggiungere uno o più account NSS, ma non possono essere aggiunti insieme agli account a livello di cliente.
 
 
 .Fasi
-. In BlueXP, selezionare *Guida > supporto*.
-. Selezionare *Gestione casi* e, se richiesto, aggiungere l'account NSS a BlueXP.
+. Nella parte superiore destra della console BlueXP, selezionare l'icona della Guida e selezionare *supporto*.
 +
-La pagina *Gestione del caso* mostra i casi aperti relativi all'account NSS associato all'account utente BlueXP. Si tratta dello stesso account NSS visualizzato nella parte superiore della pagina *gestione NSS*.
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["Schermata del menu Help (Guida) in cui Support (Assistenza) è la prima opzione elencata"]
 
-. Se si desidera, modificare le informazioni visualizzate nella tabella:
+. Selezionare *Gestione NSS > Aggiungi account NSS*.
+. Quando richiesto, selezionare *continua* per essere reindirizzato a una pagina di accesso Microsoft.
 +
-** In *Organization's Cases* (casi dell'organizzazione), selezionare *View* (Visualizza) per visualizzare tutti i casi associati alla società.
-** Modificare l'intervallo di date scegliendo un intervallo di date esatto o scegliendo un intervallo di tempo diverso.
+NetApp utilizza Microsoft Entra ID come provider di identità per i servizi di autenticazione specifici per il supporto e la licenza.
+
+. Nella pagina di accesso, fornire l'indirizzo e-mail e la password registrati del NetApp Support Site per eseguire il processo di autenticazione.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-date-range.png["Una schermata dell'opzione sopra la tabella nella pagina di gestione del caso che consente di scegliere un intervallo di date esatto o gli ultimi 7 giorni, 30 giorni o 3 mesi."]
-
-** Filtrare il contenuto delle colonne.
-+
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-filter.png["Schermata dell'opzione di filtro nella colonna Status (Stato) che consente di filtrare i casi che corrispondono a uno stato specifico, ad esempio attivo o chiuso."]
-
-** Modificare le colonne visualizzate nella tabella selezionando image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-columns.png["L'icona più visualizzata nella tabella"] e quindi scegliere le colonne che si desidera visualizzare.
-+
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-columns.png["Una schermata che mostra le colonne che è possibile visualizzare nella tabella."]
-
-
-
-. Gestire un caso esistente selezionando image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-action.png["Un'icona con tre punti che compare nell'ultima colonna della tabella"] e selezionando una delle opzioni disponibili:
-+
-** *Visualizza caso*: Visualizza tutti i dettagli relativi a un caso specifico.
-** *Aggiorna note sul caso*: Fornisci ulteriori dettagli sul problema oppure seleziona *carica file* per allegare fino a un massimo di cinque file.
-+
-Gli allegati sono limitati a 25 MB per file. Sono supportate le seguenti estensioni di file: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx e csv.
-
-** *Chiudi caso*: Fornisci i dettagli sul motivo per cui stai chiudendo il caso e seleziona *Chiudi caso*.
-
+Queste azioni consentono a BlueXP di utilizzare il tuo account NSS per download di licenze, verifica dell'aggiornamento software e registrazioni di supporto future.
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-actions.png["Una schermata che mostra le azioni che è possibile eseguire dopo aver selezionato il menu nell'ultima colonna della tabella."]
+Tenere presente quanto segue:
+
++
+** L'account NSS deve essere un account a livello di cliente (non un account guest o temporaneo). Puoi avere più account NSS a livello di cliente.
+** Se si tratta di un account di livello partner, può essere presente un solo account NSS. Se si tenta di aggiungere account NSS a livello di cliente ed esiste un account a livello di partner, viene visualizzato il seguente messaggio di errore:
++
+"Il tipo di cliente NSS non è consentito per questo account, in quanto esistono già utenti NSS di tipo diverso."
+
++
+Lo stesso vale se si dispone di account NSS a livello di cliente preesistenti e si tenta di aggiungere un account a livello di partner.
+
+** Una volta effettuato l'accesso, NetApp memorizzerà il nome utente NSS.
++
+Si tratta di un ID generato dal sistema che viene mappato all'e-mail. Nella pagina *NSS Management*, è possibile visualizzare l'e-mail da image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["Un'icona di tre punti orizzontali"] menu.
+
+** Se è necessario aggiornare i token delle credenziali di accesso, è disponibile anche l'opzione *Update Credentials* (Aggiorna credenziali) in image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["Un'icona di tre punti orizzontali"] menu.
++
+Questa opzione richiede di effettuare nuovamente l'accesso. Il token per questi account scade dopo 90 giorni. Verrà inviata una notifica per avvisare l'utente.
+
+
 
 
